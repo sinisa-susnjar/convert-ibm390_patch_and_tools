@@ -4,7 +4,7 @@ Copy the patch file IBM390lib.ccc.patch to Convert-IBM390-0.29/d/IBM390lib.ccc a
 Performance relevant changes are enclosed in #if USE_OPT ... #endif brackets.
 
 I made the changes for a project where I had to decode multi gigabyte EBCDIC encoded files consisting mostly of packed decimals and every second that could be saved during processing counted against the total runtime of the batch processes involved.
-The performance gains for the encoding case (ASCII->EBCDIC) are pretty good, cutting the runtime approx. in half, while the gains for the decoding (EBCDIC->ASCII) case where not soo impressive (only around 5% - but still an improvement).
+The performance gains for the encoding case (ASCII->EBCDIC) are pretty good, cutting the runtime approx. in half, while the gains for the decoding (EBCDIC->ASCII) case where not too impressive (only around 5% - but still an improvement).
 
 # The command line conv.pl tool
 
